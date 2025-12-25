@@ -1,0 +1,19 @@
+body{
+background-color:white;
+}
+#content{
+    width: 700px;
+    float: left;
+}
+#sidebar{
+    width: 300px;
+    float: left;
+}
+.errorlist{
+            color:red;
+}
+
+.comment:nth-child(odd){
+    background-color: #EEE;
+}
+
