@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş</title>
+</head>
+<body>
+<h1>Kitap</h1>
+<a href="/ekle">Ekle</a>
+<table>
+    <tr>
+        <td>adi</td>
+        <td>tarih</td>
+        <td>yazar</td>
+        <td>Sil</td>
+    </tr>
+    {%  for dizi in diziler %}
+    <tr>
+        <td>{{dizi.adi}}</td>
+        <td>{{dizi.tarih}}</td>
+        <td>{{dizi.yazar}}</td>
+        <td><a href="/sil/{{dizi.id}}" >Sil</a> </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste</title>
+</head>
+<body>
+<h1>Kitsp Listesi</h1>
+<a href="/ekle">Ekle</a>
+<table>
+    <tr>
+        <td>adi</td>
+        <td>yazari</td>
+        <td>konusu</td>
+        <td>Sil</td>
+    </tr>
+    {% for kitap in kitaplar %}
+    <tr>
+        <td>{{kitap.adi}}</td>
+        <td>{{kitap.konusu}}</td>
+        <td>{{kitap.yazari}}</td>
+        <td><a href="/sil/{{kitap.adi}}">Sil</a> </td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
